@@ -1,15 +1,15 @@
-file 6069 1591754683                                            
+file 6231 1591761616                                            
 version 2
-run General-0-20200610-07:34:42-56671
+run General-0-20200610-09:30:15-57012
 attr configname General
-attr datetime 20200610-07:34:42
+attr datetime 20200610-09:30:15
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network DroneNet
-attr processid 56671
+attr processid 57012
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -73,6 +73,9 @@ param *.configurator.addStaticRoutes false
 param *.host*.typename "\"AodvRouter\""
 param *.hostB.wlan[0].radio.displayCommunicationRange true
 param *.visualizer.dataLinkVisualizer.packetFilter "\"AODV*\""
+param *.host*.mobility.initialZ 1.7m
+param *.physicalEnvironment.config "xmldoc(\"walls.xml\")"
+param *.radioMedium.obstacleLoss.typename "\"IdealObstacleLoss\""
 
 vector 0 DroneNet.hostA.energyStorage powerConsumption:vector ETV
 attr interpolationmode sample-hold
@@ -122,16 +125,16 @@ vector 11 DroneNet.hostR1.wlan[0].radio receptionState:vector ETV
 attr interpolationmode sample-hold
 attr source receptionStateChanged
 attr title "Radio reception state, vector"
-0	5730 44 0 0 0 0 5 0 0.002 0.002 4e-06
-1	5774 44 0 0 0 0 5 0 0.002 0.002 4e-06
-2	5818 44 0 0 0 0 5 0 0.002 0.002 4e-06
-3	5862 24 0 0 0 0 3 0 2 2 4
-4	5886 36 0 0 0 0 4 0 0.002 0.002 4e-06
-5	5922 24 0 0 0 0 3 0 2 2 4
-6	5946 36 0 0 0 0 4 0 0.002 0.002 4e-06
-7	5982 24 0 0 0 0 3 0 2 2 4
-8	6006 36 0 0 0 0 4 0 0.002 0.002 4e-06
-9	6042 8 0 0 0 0 1 1 1 1 1
-10	6050 9 0 0 0 0 1 1 1 1 1
-11	6059 9 0 0 0 0 1 1 1 1 1
+0	5892 44 0 0 0 0 5 0 0.002 0.002 4e-06
+1	5936 44 0 0 0 0 5 0 0.002 0.002 4e-06
+2	5980 44 0 0 0 0 5 0 0.002 0.002 4e-06
+3	6024 24 0 0 0 0 3 0 2 2 4
+4	6048 36 0 0 0 0 4 0 0.002 0.002 4e-06
+5	6084 24 0 0 0 0 3 0 2 2 4
+6	6108 36 0 0 0 0 4 0 0.002 0.002 4e-06
+7	6144 24 0 0 0 0 3 0 2 2 4
+8	6168 36 0 0 0 0 4 0 0.002 0.002 4e-06
+9	6204 8 0 0 0 0 1 1 1 1 1
+10	6212 9 0 0 0 0 1 1 1 1 1
+11	6221 9 0 0 0 0 1 1 1 1 1
 

@@ -1,14 +1,14 @@
 version 2
-run General-0-20200610-07:34:42-56671
+run General-0-20200610-09:30:15-57012
 attr configname General
-attr datetime 20200610-07:34:42
+attr datetime 20200610-09:30:15
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network DroneNet
-attr processid 56671
+attr processid 57012
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -72,6 +72,9 @@ param *.configurator.addStaticRoutes false
 param *.host*.typename "\"AodvRouter\""
 param *.hostB.wlan[0].radio.displayCommunicationRange true
 param *.visualizer.dataLinkVisualizer.packetFilter "\"AODV*\""
+param *.host*.mobility.initialZ 1.7m
+param *.physicalEnvironment.config "xmldoc(\"walls.xml\")"
+param *.radioMedium.obstacleLoss.typename "\"IdealObstacleLoss\""
 
 vector 0 DroneNet.hostA.energyStorage powerConsumption:vector ETV
 attr interpolationmode sample-hold
