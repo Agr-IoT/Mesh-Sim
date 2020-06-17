@@ -1,4 +1,12 @@
 <environment>
-    <object position="min 130 180 0" orientation="0 0 0" shape="cuboid 5 100 4"
+    <object position="min 450 650 0" orientation="0 0 0" shape="cuboid 100 100 4"
+            material="concrete" fill-color="203 65 84" opacity="0.8"/>
+	<object position="min 80 550 0" orientation="0 0 0" shape="cuboid 85 85 4"
+            material="concrete" fill-color="203 65 84" opacity="0.8"/>
+	<object position="min 80 350 0" orientation="0 0 0" shape="cuboid 60 60 4"
+            material="concrete" fill-color="203 65 84" opacity="0.8"/>
+	<object position="min 400 150 0" orientation="0 0 0" shape="cuboid 40 190 4"
+            material="concrete" fill-color="203 65 84" opacity="0.8"/>
+	<object position="min 350 100 0" orientation="0 0 0" shape="cuboid 190 40 4"
             material="concrete" fill-color="203 65 84" opacity="0.8"/>
 </environment>

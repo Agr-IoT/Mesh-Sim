@@ -22,7 +22,7 @@ import inet.environment.common.PhysicalEnvironment;
 network DroneNet
 {
     parameters:
-        @display("bgb=650,500;bgg=100,1,grey95");
+        @display("bgb=602.784,911.23206;bgg=100,1,grey95");
         @figure[title](type=label; pos=0,-1; anchor=sw; color=darkblue);
 
         @figure[rcvdPkText](type=indicatorText; pos=380,20; anchor=w; font=,18; textFormat="packets received: %g"; initialValue=0);
@@ -42,12 +42,18 @@ network DroneNet
             @display("p=580,425");
         }
         hostA: <default("WirelessHost")> like INetworkNode {
-            @display("p=51,404");
+            @display("p=135.072,699.552");
         }
         hostB: <default("WirelessHost")> like INetworkNode {
-            @display("p=451,404");
+            @display("p=395.13602,402.19202");
+        }
+        hostC: <default("WirelessHost")> like INetworkNode {
+            @display("p=80.64,284.256");
+        }
+        hostD: <default("WirelessHost")> like INetworkNode {
+            @display("p=314.496,42.336002");
         }
         hostR1: <default("WirelessHost")> like INetworkNode {
-            @display("p=250,300");
+            @display("p=295.344,841.68005");
         }
 }
